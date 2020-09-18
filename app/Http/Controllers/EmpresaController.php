@@ -17,7 +17,14 @@ class EmpresaController extends Controller
 
     public function guardar()
     {
-       Empresa::create(
+        $this->validate(request(), [
+            'nombreDeLaEmpresa' => 'required',
+            'codigoDeLaEmpresa' => 'required',
+            'numeroDeTelefonoDeLaEmpresa' => 'required',
+            'correoElectronicoDeLaEmpresa' => 'required',
+            'direccionDeLaEmpresa' => 'required'
+        ]);
+        Empresa::create(
            [
             'nombreDeLaEmpresa' => request('nombreDeLaEmpresa'),
             'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
