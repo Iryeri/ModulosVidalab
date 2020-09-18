@@ -18,8 +18,8 @@
                        
                         @foreach($empresas as $empresa)
                         <ul>
-                            <ui >{{$empresa->codigoDeLaEmpresa}}</ui>
-                            <ui>{{$empresa->nombreDeLaEmpresa}}</ui>
+                            <ui>{{$empresa->codigoDeLaEmpresa}}</ui>
+                            <ui><a href="/empresas/{{$empresa->idDeLaEmpresa}}">{{ $empresa->nombreDeLaEmpresa}}</a></ui>
                             <ui>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</ui>
                         </ul>
                         @endforeach
