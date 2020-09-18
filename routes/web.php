@@ -19,8 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('/empresas/agregar', 'EmpresaController@agregar');
-
-
+Route::post('/empresas', 'EmpresaController@guardar');
 
 
 Auth::routes();

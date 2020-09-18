@@ -8,6 +8,10 @@ class Empresa extends Model
 {
     protected $fillable =
     [
-        'nombreDeLaEmpresa', 'codigoDeLaEmpresa', 'direccionDeLaEmpresa'
+        'nombreDeLaEmpresa',
+        'codigoDeLaEmpresa',
+        'numeroDeTelefonoDeLaEmpresa',
+        'correoElectronicoDeLaEmpresa',
+        'direccionDeLaEmpresa'
     ];
 }
