@@ -15,14 +15,30 @@
                         </div>
                     @endif
 
-                       
+                    <ul class="list-group">             
+                        <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                            <th scope="col"><center>Código</center></th>
+                            <th scope="col"><center>Nombre de Empresa</center></th>
+                            <th scope="col"><center>Número telefónico de Empresa</center></th>
+                            <th></th>
+                            <th scope="col">Acción a realizar</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
                         @foreach($empresas as $empresa)
-                        <ul>
-                            <ui>{{$empresa->codigoDeLaEmpresa}}</ui>
-                            <ui><a href="/empresas/{{$empresa->idDeLaEmpresa}}">{{ $empresa->nombreDeLaEmpresa}}</a></ui>
-                            <ui>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</ui>
-                        </ul>
-                        @endforeach
+                            <tr>
+                            <th scope="row"><center>{{$empresa->codigoDeLaEmpresa}}</center></th>
+                            <td><center><a href="/empresas/{{$empresa->id}}">{{ $empresa->nombreDeLaEmpresa}}</center></a></td>
+                            <td><center>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</center></td>
+                            <td></td>
+                            <td> </center><a href="/empresas/{{$empresa->id}}" class="btn btn-primary">Consultar</a> |  <a href="/empresas/{{$empresa->id}}/editar" class="btn btn-success">Editar</a> |  <a href="/empresas/{{$empresa->id}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
+                            @endforeach
+                        </tbody>
+                        </table>
+                    </ul>
                     <br>
                 </div>
             </div>

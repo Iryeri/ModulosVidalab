@@ -38,9 +38,8 @@ class EmpresaController extends Controller
     }
 
 
-    public function show (Empresa $empresa)
+    public function mostrar(Empresa $empresa)
     {
-        return view('empresas.visualizar', compact('empresa'));
+        return view('empresas.mostrar', compact('empresa'));
     }
-
 }
