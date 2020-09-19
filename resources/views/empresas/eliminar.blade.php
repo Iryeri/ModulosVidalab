@@ -8,9 +8,16 @@
         <div class="card-header"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
             <h3>Empresa: {{$empresa->nombreDeLaEmpresa}}</h3>  
         </div>
-    </div><!--BOOTSTRAP 4 -> COMPONENT-CARD--> 
+        
         <div class="card-body"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-      
+            <form action="/empresas/{{$empresa->id}}" method="POST">
+                @csrf   
+                @method('DELETE')
+
+                <div class="alert alert-danger" role="alert">
+                    ¡Lea cuidadosamente la información! <b>¿Realmente desea eliminar este registro?.</b>
+                </div>
+
                 <label for="exampleFormControlSelect1">Código</label>
                 <input type="text" class="form-control" name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
                 
@@ -26,12 +33,11 @@
                
                 <label for="exampleFormControlSelect1">Fecha de Registro</label>
                 <input type="text" class="form-control" name="fechaDeRegistro" readonly="fechaDeRegistro" value="{{$empresa->created_at}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-        </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-
-       
-   <div class="card-body d-flex"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-            <a href="/home" class="btn btn-info">Regresar a la lista</a> <!--BOOTSTRAP 4-->
+            
+                <button type="submit" class="btn btn-danger">Eliminar Registro</button>           <a href="/home" class="btn btn-primary">Cancelar</a>
+            
             </form>
         </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-    </div><!--BOOTSTRAP 4 -> LAYOUT-->                    
+    </div><!--BOOTSTRAP 4 -> LAYOUT-->   
+</div>                   
 @endsection

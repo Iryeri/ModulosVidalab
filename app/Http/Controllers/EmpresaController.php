@@ -42,4 +42,40 @@ class EmpresaController extends Controller
     {
         return view('empresas.mostrar', compact('empresa'));
     }
+
+
+    public function editar(Empresa $empresa)
+    {
+        return view('empresas.editar', compact('empresa'));
+    }
+
+
+    public function actualizar (Empresa $empresa)
+    {
+        $this->validate(request(),
+        [
+            'nombreDeLaEmpresa' => 'required',
+            'codigoDeLaEmpresa' => 'required',
+            'numeroDeTelefonoDeLaEmpresa' => 'required',
+            'correoElectronicoDeLaEmpresa' => 'required',
+            'direccionDeLaEmpresa' => 'required'
+        ]);
+        $empresa->update(request()->all());
+
+        return view('empresas.mostrar', compact('empresa'));
+    }
+
+
+    public function eliminar(Empresa $empresa)
+    {
+        return view('empresas.eliminar', compact('empresa'));
+    }
+
+
+    public function destruir (Empresa $empresa)
+    {
+        $empresa->delete();
+
+        return redirect('/home');
+    }
 }

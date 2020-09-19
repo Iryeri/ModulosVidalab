@@ -31,7 +31,7 @@
                         @foreach($empresas as $empresa)
                             <tr>
                             <th scope="row"><center>{{$empresa->codigoDeLaEmpresa}}</center></th>
-                            <td><center><a href="/empresas/{{$empresa->id}}">{{ $empresa->nombreDeLaEmpresa}}</center></a></td>
+                            <td><center>{{ $empresa->nombreDeLaEmpresa}}</center></td>
                             <td><center>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</center></td>
                             <td></td>
                             <td> </center><a href="/empresas/{{$empresa->id}}" class="btn btn-primary">Consultar</a> |  <a href="/empresas/{{$empresa->id}}/editar" class="btn btn-success">Editar</a> |  <a href="/empresas/{{$empresa->id}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
