@@ -12,7 +12,7 @@
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="/empresas">Registro de empresas</a>
-      <a class="dropdown-item" href="#">Registrar citas</a>
+      <a class="dropdown-item" href="/citas">Registrar citas</a>
     </div>
   </div>
 </div>

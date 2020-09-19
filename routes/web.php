@@ -28,6 +28,12 @@ Route::get('/empresas/{empresa}/eliminar', 'EmpresaController@eliminar');
 Route::delete('/empresas/{empresa}', 'EmpresaController@destruir');
 
 //RUTAS DE SUBMÓDULO ATENCIONES
+Route::get('/citas', 'CitaController@index');
+Route::get('/citas/{cita}', 'CitaController@mostrar');
+Route::get('/citas/{cita}/editar', 'CitaController@editar');
+Route::put('/citas/{cita}', 'CitaController@actualizar');
+Route::get('/citas/{cita}/eliminar', 'CitaController@eliminar');
+Route::delete('/citas/{cita}', 'CitaController@destruir');
 
 Auth::routes();
 
