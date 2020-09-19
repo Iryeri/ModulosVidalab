@@ -33,7 +33,7 @@
                 @enderror
 
                 <label for="exampleFormControlSelect1">Correo electrónico</label>
-                <input type="text" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
+                <input type="email" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
                 @error('correoElectronicoDeLaEmpresa')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror

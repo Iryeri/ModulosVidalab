@@ -8,7 +8,14 @@ use Illuminate\Http\Request;
 class EmpresaController extends Controller
 {
 
-    
+//LISTAR REGISTROS
+    public function index()
+    {
+        $empresas = Empresa::all();
+        return view('empresas.index', compact('empresas'));
+    }
+
+//AGREGAR REGISTRO
     public function agregar()
     {
         return view('empresas.agregar');
@@ -34,16 +41,17 @@ class EmpresaController extends Controller
            ]
            );
         
-        return redirect('/home');
+        return redirect('/empresas');
     }
 
-
+//MOSTRAR ÚNICO REGISTRO
     public function mostrar(Empresa $empresa)
     {
         return view('empresas.mostrar', compact('empresa'));
     }
 
 
+//EDITAR REGISTRO
     public function editar(Empresa $empresa)
     {
         return view('empresas.editar', compact('empresa'));
@@ -65,7 +73,7 @@ class EmpresaController extends Controller
         return view('empresas.mostrar', compact('empresa'));
     }
 
-
+//ELIMINAR REGISTRO
     public function eliminar(Empresa $empresa)
     {
         return view('empresas.eliminar', compact('empresa'));
@@ -76,6 +84,6 @@ class EmpresaController extends Controller
     {
         $empresa->delete();
 
-        return redirect('/home');
+        return redirect('/empresas');
     }
 }

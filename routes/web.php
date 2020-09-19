@@ -18,14 +18,16 @@ Route::get('/', function () {
 });
 
 //RUTAS DE SUBMODULO EMPRESAS
+Route::get('/empresas', 'EmpresaController@index');
+Route::get('/empresas/{empresa}', 'EmpresaController@mostrar');
 Route::get('/empresas/agregar', 'EmpresaController@agregar');
 Route::post('/empresas', 'EmpresaController@guardar');
-Route::get('/empresas/{empresa}', 'EmpresaController@mostrar');
 Route::get('/empresas/{empresa}/editar', 'EmpresaController@editar');
 Route::put('/empresas/{empresa}', 'EmpresaController@actualizar');
 Route::get('/empresas/{empresa}/eliminar', 'EmpresaController@eliminar');
 Route::delete('/empresas/{empresa}', 'EmpresaController@destruir');
 
+//RUTAS DE SUBMÓDULO ATENCIONES
 
 Auth::routes();
 

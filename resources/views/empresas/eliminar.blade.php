@@ -34,7 +34,7 @@
                 <label for="exampleFormControlSelect1">Fecha de Registro</label>
                 <input type="text" class="form-control" name="fechaDeRegistro" readonly="fechaDeRegistro" value="{{$empresa->created_at}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
             
-                <button type="submit" class="btn btn-danger">Eliminar Registro</button>           <a href="/home" class="btn btn-primary">Cancelar</a>
+                <button type="submit" class="btn btn-danger">Eliminar Registro</button>           <a href="/empresas" class="btn btn-primary">Cancelar</a>
             
             </form>
         </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->

@@ -45,7 +45,7 @@
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
 
-                <button type="submit" class="btn btn-dark">Acturalizar datos</button>           <a href="/home" class="btn btn-primary">Cancelar</a>
+                <button type="submit" class="btn btn-dark">Acturalizar datos</button>           <a href="/empresas" class="btn btn-primary">Cancelar</a>
             </form>
         </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
     </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
