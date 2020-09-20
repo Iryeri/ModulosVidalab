@@ -16,14 +16,46 @@ class CitaController extends Controller
     }
 
 //AGREGAR
+    public function agregar()
+    {
+        return view ('citas.agregar');
+    }
 
+    public function guardar()
+    {
+        $this->validate(request(),
+        [
+            'codigoDeLaEmpresa' => 'required',
+            'nombreDelSolicitante' => 'required',
+            'primerApellidoDelSolicitante' => 'required',
+            'segundoApellidoDelSolicitante' => 'required',
+            'numeroDeClientesPorAtender' => 'required',
+            'fechaDeCita' => 'required',
+            'horaDeCita' => 'required',
+            'tiposDeAnalisisRequeridos' => 'required',
+        ]);
+        Cita::create(
+        [
+            'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
+            'nombreDelSolicitante' => request('nombreDelSolicitante'),
+            'primerApellidoDelSolicitante' => request('primerApellidoDelSolicitante'),
+            'segundoApellidoDelSolicitante' => request('segundoApellidoDelSolicitante'),
+            'numeroDeClientesPorAtender' => request('numeroDeClientesPorAtender'),
+            'fechaDeCita' => request('fechaDeCita'),
+            'horaDeCita' => request('horaDeCita'),
+            'tiposDeAnalisisRequeridos' => request('tiposDeAnalisisRequeridos'),
+        ]
+        );
+
+        return redirect ('/citas');
+    }
 
 
 //MOSTRAR ÚNICO REGISTRO
-public function mostrar(Cita $cita)
-{
-    return view('citas.mostrar', compact('cita'));
-}
+    public function mostrar(Cita $cita)
+    {
+        return view('citas.mostrar', compact('cita'));
+    }
 
 
 //EDITAR REGISTRO

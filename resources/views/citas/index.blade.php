@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <p><a href="" class="btn btn-primary">Registrar nueva cita</a>   |   <a href="/home" class="btn btn-primary">Volever al menú</a></p>
+            <p><a href="/citas/agregar" class="btn btn-primary">Registrar nueva cita</a>   |   <a href="/home" class="btn btn-primary">Volever al menú</a></p>
         </div>
     </div>
 </div>

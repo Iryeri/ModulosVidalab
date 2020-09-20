@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 //RUTAS DE SUBMODULO EMPRESAS
 Route::get('empresas/agregar', 'EmpresaController@agregar');
 Route::post('/empresas', 'EmpresaController@guardar');
@@ -22,7 +23,8 @@ Route::delete('/empresas/{empresa}', 'EmpresaController@destruir');
 
 
 //RUTAS DE SUBMÓDULO ATENCIONES
-
+Route::get('/citas/agregar', 'CitaController@agregar');
+Route::post('/citas', 'CitaController@guardar');
 
 Route::get('/citas', 'CitaController@index');
 Route::get('/citas/{cita}', 'CitaController@mostrar');

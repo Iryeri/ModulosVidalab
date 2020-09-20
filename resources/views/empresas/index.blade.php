@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
+        <div class="col-md-40">
             <div class="card">
                 <div class="card-header"><h4><b>Registro de empresas</b></h4></div>
                     <div class="card-body"> 
@@ -27,9 +27,10 @@
                                         <td><center>{{ $empresa->nombreDeLaEmpresa}}</center></td>
                                         <td><center>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</center></td>
                                         <td></td>
-                                        <td> </center><a href="/empresas/{{$empresa->id}}" class="btn btn-primary">Consultar</a> |  
-                                        <a href="/empresas/{{$empresa->id}}/editar" class="btn btn-success">Editar</a> |  
-                                        <a href="/empresas/{{$empresa->id}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
+                                        <td> </center><a href="/empresas/{{$empresa->id}}" class="btn btn-primary">Consultar datos</a> |  
+                                        <a href="/empresas/{{$empresa->id}}/editar" class="btn btn-success">Editar datos</a> |
+                                        <a href="/citas/agregar" class="btn btn-info">Agregar cita</a> |  
+                                        <a href="/empresas/{{$empresa->id}}/eliminar" class="btn btn-danger">Eliminar datos</a> </center></td>
                                     </tr>
                                     @endforeach
                                 </tbody>
