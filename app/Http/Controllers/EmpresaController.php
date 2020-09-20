@@ -15,6 +15,7 @@ class EmpresaController extends Controller
         return view('empresas.index', compact('empresas'));
     }
 
+
 //AGREGAR REGISTRO
     public function agregar()
     {
@@ -32,17 +33,18 @@ class EmpresaController extends Controller
             'direccionDeLaEmpresa' => 'required'
         ]);
         Empresa::create(
-           [
+        [
             'nombreDeLaEmpresa' => request('nombreDeLaEmpresa'),
             'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
             'numeroDeTelefonoDeLaEmpresa' => request('numeroDeTelefonoDeLaEmpresa'),
             'correoElectronicoDeLaEmpresa' => request('correoElectronicoDeLaEmpresa'),
             'direccionDeLaEmpresa' => request('direccionDeLaEmpresa'),
-           ]
-           );
+        ]
+        );
         
         return redirect('/empresas');
     }
+
 
 //MOSTRAR ÚNICO REGISTRO
     public function mostrar(Empresa $empresa)
@@ -73,6 +75,7 @@ class EmpresaController extends Controller
         return view('empresas.mostrar', compact('empresa'));
     }
 
+    
 //ELIMINAR REGISTRO
     public function eliminar(Empresa $empresa)
     {

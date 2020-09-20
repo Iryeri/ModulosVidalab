@@ -2,52 +2,68 @@
 
 @section('content')
 
-<div class="container"> <!--BOOTSTRAP 4 -> LAYOUT-->
+<div class="container">
 
-    <div class="card"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-        <div class="card-header"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-            Registrar Nueva Empresa
+    <div class="card">
+        <div class="card-header">
+           <h3><b> Registrar Nueva Empresa </b></h3>
         </div>
 
-        <div class="card-body"><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
+        <div class="card-body">
 
-            <form action="/empresas" method="POST"><!--FORMULARIO PROPIO-->
+            <form action="/empresas" method="POST">
                 @csrf
 
-                <label for="exampleFormControlSelect1">Nombre</label>
-                <input type="text" class="form-control" placeholder="Escriba el nombre de la empresa" name="nombreDeLaEmpresa" value="{{old('nombreDeLaEmpresa')}}" /> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-                @error('nombreDeLaEmpresa')
-                    <div class="alert alert-danger">{{$message}}</div>
-                @enderror
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlSelect1">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Escriba el nombre de la empresa" name="nombreDeLaEmpresa" value="{{old('nombreDeLaEmpresa')}}" /> <br> 
+                        @error('nombreDeLaEmpresa')
+                            <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlSelect1">Código de la empresa</label>
+                        <input type="text" class="form-control" placeholder="Escriba el código de la empresa" name="codigoDeLaEmpresa" value="{{old('codigoDeLaEmpresa')}}"/> <br> 
+                        @error('codigoDeLaEmpresa')
+                            <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
+                    </div>
+                </div>
 
-                <label for="exampleFormControlSelect1">Código</label>
-                <input type="text" class="form-control" placeholder="Escriba el código de la empresa" name="codigoDeLaEmpresa" value="{{old('codigoDeLaEmpresa')}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-                @error('codigoDeLaEmpresa')
-                    <div class="alert alert-danger">{{$message}}</div>
-                @enderror
-
-                <label for="exampleFormControlSelect1">Número telefónico</label>
-                <input type="text" class="form-control" placeholder="Escriba un número telefónico para contacto" name="numeroDeTelefonoDeLaEmpresa" value="{{old('numeroDeTelefonoDeLaEmpresa')}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-                @error('numeroDeTelefonoDeLaEmpresa')
-                    <div class="alert alert-danger">{{$message}}</div>
-                @enderror
-
-                <label for="exampleFormControlSelect1">Correo electrónico</label>
-                <input type="email" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-                @error('correoElectronicoDeLaEmpresa')
-                    <div class="alert alert-danger">{{$message}}</div>
-                @enderror
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlSelect1">Número telefónico</label>
+                        <input type="text" class="form-control" placeholder="Escriba un número telefónico para contacto" name="numeroDeTelefonoDeLaEmpresa" value="{{old('numeroDeTelefonoDeLaEmpresa')}}"/> <br> 
+                        @error('numeroDeTelefonoDeLaEmpresa')
+                            <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlSelect1">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> 
+                        @error('correoElectronicoDeLaEmpresa')
+                            <div class="alert alert-danger">{{$message}}</div>
+                        @enderror
+                    </div>
+                </div>
 
                 <label for="exampleFormControlSelect1">Ubicación (dirección exacta)</label>
-                <textarea name="direccionDeLaEmpresa" class="form-control" cols="30" rows="5" placeholder="Escriba la dirección exacta de la empresa">{{old('direccionDeLaEmpresa')}}</textarea> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
+                <textarea name="direccionDeLaEmpresa" class="form-control" cols="30" rows="5" placeholder="Escriba la dirección exacta de la empresa">{{old('direccionDeLaEmpresa')}}</textarea> <br> 
                 @error('direccionDeLaEmpresa')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
 
-                <button type="submit" class="btn btn-dark">Guardar</button> <!--BOOTSTRAP 4 -> CLASS BUTTOM-->            </form>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Registrar empresa</button>
+                    </div>
+                    <div class="col">
+                        <a href="/empresas" class="btn btn-primary">Cancelar y volver</a>
+                    </div>
+                </div>
             </form>
-
-        </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-    </div><!--BOOTSTRAP 4 -> COMPONENT-CARD-->
-</div><!--BOOTSTRAP 4 -> LAYOUT-->
-@endsection <!--ENCABEZADO--> 
+        </div>
+    </div>
+</div>
+@endsection  

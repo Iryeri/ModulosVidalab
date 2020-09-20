@@ -15,7 +15,7 @@
                                         <th scope="col"><center>Código</center></th>
                                         <th scope="col"><center>Nombre de Empresa</center></th>
                                         <th scope="col"><center>Número telefónico de Empresa</center></th>
-                                        <th></th>
+                                        <th scope="col"></th>
                                         <th scope="col">Acción a realizar</th>
                                     </tr>
                                 </thead>
@@ -38,8 +38,9 @@
                     </div>
                 </div>
             </div>
-            <p><a href="/empresas/agregar" class="btn btn-dark">Registrar Nueva Empresa</a>   |   <a href="/home" class="btn btn-dark">Volever al menú</a></p>
+            <a href="/empresas/agregar" class="btn btn-dark">Registrar Empresa</a>    |   <a href="/home" class="btn btn-dark">Volever al menú</a>   
         </div>
     </div>
 </div>
 @endsection
+

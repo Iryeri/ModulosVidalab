@@ -14,6 +14,7 @@
                                     <tr>
                                         <th scope="col"><center>Fecha de cita</center></th>
                                         <th scope="col"><center>Hora de cita</center></th>
+                                        <th scope="col"><center>Clientes totales por atender</center></th>
                                         <th scope="col"><center>Análisis solicitados</center></th>
                                         <th scope="col"><center>Solicitante</center></th>
                                         <th></th>
@@ -26,6 +27,7 @@
                                     <tr>
                                         <th scope="row"><center>{{ $cita->fechaDeCita}}</center></th>
                                         <td><center>{{$cita->horaDeCita}}</center></td>
+                                        <td><center>{{$cita->numeroDeClientesPorAtender}}</center></td>
                                         <td><center>{{$cita->tiposDeAnalisisRequeridos}}</center></td>
                                         <td><center>{{$cita->nombreDelSolicitante}} {{$cita->primerApellidoDelSolicitante}} {{$cita->segundoApellidoDelSolicitante}}</center></td>
                                         <td></td>
@@ -40,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <p><a href="" class="btn btn-dark">Registrar nueva cita</a>   |   <a href="/home" class="btn btn-dark">Volever al menú</a></p>
+            <p><a href="" class="btn btn-primary">Registrar nueva cita</a>   |   <a href="/home" class="btn btn-primary">Volever al menú</a></p>
         </div>
     </div>
 </div>

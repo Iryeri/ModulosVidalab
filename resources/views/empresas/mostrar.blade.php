@@ -5,29 +5,51 @@
 <div class="container"> 
     <div class="card">
         <div class="card-header">
-            <h3>Empresa: {{$empresa->nombreDeLaEmpresa}}</h3>  
+            <h3><b>Consulta de registro de empresa</b></h3>  
         </div>
     </div>
     
     <div class="card-body">
-        <label for="exampleFormControlSelect1">Código</label>
-        <input type="text" class="form-control" name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-        
-        <label for="exampleFormControlSelect1">Número telefónico</label>
-        <input type="text" class="form-control" name="numeroDeTelefonoDeLaEmpresa" readonly="numeroDeTelefonoDeLaEmpresa" value="{{$empresa->numeroDeTelefonoDeLaEmpresa}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
+        <div class="row">
+            <div class="col">
+                <label for="exampleFormControlSelect1">Nombre</label>
+                <input type="text" class="form-control" name="nombreDeLaEmpresa" readonly="nombreDeLaEmpresa" value="{{$empresa->nombreDeLaEmpresa}}"/> <br> 
+            </div>
+            <div class="col">
+                <label for="exampleFormControlSelect1">Código</label>
+                <input type="text" class="form-control" name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}"/> <br>
+            </div>
+        </div> 
 
-        <label for="exampleFormControlSelect1">Correo electrónico</label>
-        <input type="text" class="form-control"name="correoElectronicoDeLaEmpresa" readonly="correoElectronicoDeLaEmpresa" value="{{$empresa->correoElectronicoDeLaEmpresa}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-        
+        <div class="row">
+            <div class="col">
+                <label for="exampleFormControlSelect1">Número telefónico</label>
+                <input type="text" class="form-control" name="numeroDeTelefonoDeLaEmpresa" readonly="numeroDeTelefonoDeLaEmpresa" value="{{$empresa->numeroDeTelefonoDeLaEmpresa}}"/> <br> 
+            </div>
+            <div class="col"> 
+                <label for="exampleFormControlSelect1">Correo electrónico</label>
+                <input type="text" class="form-control"name="correoElectronicoDeLaEmpresa" readonly="correoElectronicoDeLaEmpresa" value="{{$empresa->correoElectronicoDeLaEmpresa}}"/> <br> 
+            </div>
+        </div>  
 
         <label for="exampleFormControlSelect1">Ubicación (dirección exacta)</label>
-        <textarea name="direccionDeLaEmpresa" class="form-control" cols="30" rows="5" readonly="direccionDeLaEmpresa">{{$empresa->direccionDeLaEmpresa}}</textarea> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
-        
-        <label for="exampleFormControlSelect1">Fecha y Hora de Registro</label>
-        <input type="text" class="form-control" name="fechaDeRegistro" readonly="fechaDeRegistro" value="{{$empresa->created_at}}"/> <br> <!--BOOTSTRAP 4 -> COMPONENT-FORMS-->
+        <textarea name="direccionDeLaEmpresa" class="form-control" cols="30" rows="5" readonly="direccionDeLaEmpresa">{{$empresa->direccionDeLaEmpresa}}</textarea> <br> 
+            
+        <div class="row">
+            <div class="col">
+                <label for="exampleFormControlSelect1">Fecha y Hora de Registro</label>
+                <input type="text" class="form-control" name="fechaDeRegistro" readonly="fechaDeRegistro" value="{{$empresa->created_at}}"/> <br> 
+            </div>
+        </div>
 
-       
-        <a href="/empresas" class="btn btn-primary">Regresar a la lista</a>  <a href="/home" class="btn btn-primary">Volver al menú</a>           
+        <div class="row">
+            <div class="col">
+                <a href="/empresas" class="btn btn-primary">Regresar a la lista</a> 
+            </div>
+            <div class="col">
+                <a href="/home" class="btn btn-primary">Volver al menú</a> 
+            </div>           
+        </div>
     </div>
 </div>                    
 @endsection
