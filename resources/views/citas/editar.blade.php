@@ -49,14 +49,14 @@
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Fecha de cita</label>
-                        <input type="text" class="form-control" placeholder="Seleccione la fecha de cita" name="fechaDeCita" value="{{$cita->fechaDeCita}}"/> <br>
+                        <input type="date" class="form-control" placeholder="Seleccione la fecha de cita" name="fechaDeCita" value="{{$cita->fechaDeCita}}"/> <br>
                         @error('fechaDeCita')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror                  
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Seleccione la hora de cita</label>
-                        <input type="text" class="form-control" placeholder="Seleccione la hora de cita" name="horaDeCita" value="{{$cita->horaDeCita}}"/> <br>
+                        <input type="time" class="form-control" placeholder="Seleccione la hora de cita" name="horaDeCita" value="{{$cita->horaDeCita}}"/> <br>
                         @error('horaDeCita')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror

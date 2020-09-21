@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cita;
+use App\Empresa;
 use Illuminate\Http\Request;
 
 class CitaController extends Controller
@@ -16,12 +17,12 @@ class CitaController extends Controller
     }
 
 //AGREGAR
-    public function agregar()
+    public function agregar(Empresa $empresa)
     {
-        return view ('citas.agregar');
+        return view ('citas.agregar', compact('empresa'));
     }
 
-    public function guardar()
+    public function guardar(Empresa $empresa)
     {
         $this->validate(request(),
         [
@@ -47,7 +48,7 @@ class CitaController extends Controller
         ]
         );
 
-        return redirect ('/citas');
+        return redirect ('/empresas');
     }
 
 
