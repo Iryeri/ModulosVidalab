@@ -22,8 +22,8 @@ Route::get('/empresas/{empresa}/eliminar', 'EmpresaController@eliminar');
 Route::delete('/empresas/{empresa}', 'EmpresaController@destruir');
 
 
-//RUTAS DE SUBMÓDULO ATENCIONES
-Route::get('/citas/agregar', 'CitaController@agregar');
+//RUTAS DE SUBMÓDULO 
+Route::get('/citas/{empresa}/agregar', 'CitaController@agregar'); //AQUI QUEDÉ
 Route::post('/citas', 'CitaController@guardar');
 
 Route::get('/citas', 'CitaController@index');
