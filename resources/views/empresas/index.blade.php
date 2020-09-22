@@ -31,6 +31,7 @@
                                         <a href="/empresas/{{$empresa->id}}/editar" class="btn btn-success">Editar datos</a> |
                                         <a href="/citas/{{$empresa->id}}/agregar" class="btn btn-info">Agregar cita</a> |  
                                         <a href="/empresas/{{$empresa->id}}/eliminar" class="btn btn-danger">Eliminar datos</a> </center></td>
+                                    <!--Agregar cita: {{$empresa->codigoDeLaEmpresa}}-->
                                     </tr>
                                     @endforeach
                                 </tbody>
