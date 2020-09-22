@@ -11,7 +11,7 @@
 
         <div class="card-body">
 
-            <form action="/empresas/{{$empresa->id}}" method="POST">
+            <form action="/empresas/{{$empresa->idDeLaEmpresa}}" method="POST">
                 @csrf
                 @method ('PUT')
                 

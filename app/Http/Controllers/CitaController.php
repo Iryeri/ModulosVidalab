@@ -27,6 +27,7 @@ class CitaController extends Controller
         $this->validate(request(),
         [
             'codigoDeLaEmpresa' => 'required',
+            'idDeLaEmpresa' => 'required',
             'nombreDelSolicitante' => 'required',
             'primerApellidoDelSolicitante' => 'required',
             'segundoApellidoDelSolicitante' => 'required',
@@ -38,6 +39,7 @@ class CitaController extends Controller
         Cita::create(
         [
             'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
+            'idDeLaEmpresa' => $empresa->idDeLaEmpresa,
             'nombreDelSolicitante' => request('nombreDelSolicitante'),
             'primerApellidoDelSolicitante' => request('primerApellidoDelSolicitante'),
             'segundoApellidoDelSolicitante' => request('segundoApellidoDelSolicitante'),

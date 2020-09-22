@@ -49,6 +49,7 @@ class EmpresaController extends Controller
 //MOSTRAR ÚNICO REGISTRO
     public function mostrar(Empresa $empresa)
     {
+        $empresas = Empresa::all();
         return view('empresas.mostrar', compact('empresa'));
     }
 

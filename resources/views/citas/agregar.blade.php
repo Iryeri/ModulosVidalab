@@ -13,17 +13,18 @@
 
             <form action="/citas" method="POST">
                 @csrf
+               
                 <div class="row">
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Empresa</label>
+                        <label for="exampleFormControlSelect1">Código</label>
                         <input type="text" class="form-control" name="nombreDeLaEmpresa" readonly="nombreDeLaEmpresa" value="{{$empresa->nombreDeLaEmpresa}}" /> <br>
                         @error('nombreDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>
-                    <div class="col">
+                    <div class="col"> 
                         <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}" /> <br>
+                        <input type="text" class="form-control"name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}" /> <br> <!--AQUÍ ME DA ERROR-->
                         @error('codigoDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror

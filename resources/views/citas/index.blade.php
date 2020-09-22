@@ -31,8 +31,8 @@
                                         <td><center>{{$cita->tiposDeAnalisisRequeridos}}</center></td>
                                         <td><center>{{$cita->nombreDelSolicitante}} {{$cita->primerApellidoDelSolicitante}} {{$cita->segundoApellidoDelSolicitante}}</center></td>
                                         <td></td>
-                                        <td> <a href="/citas/{{$cita->id}}/editar" class="btn btn-success">Editar</a> |  
-                                        <a href="/citas/{{$cita->id}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
+                                        <td> <a href="/citas/{{$cita->idDeLaCita}}/editar" class="btn btn-success">Editar</a> |  
+                                        <a href="/citas/{{$cita->idDeLaCita}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
                                     </tr>
                                     @endforeach
                                 </tbody>

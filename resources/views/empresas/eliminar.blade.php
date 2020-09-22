@@ -9,7 +9,7 @@
             <h3><b>Eliminar registro de empresa</b></h3>  
         </div>
         <div class="card-body">
-            <form action="/empresas/{{$empresa->id}}" method="POST">
+            <form action="/empresas/{{$empresa->idDeLaEmpresa}}" method="POST">
                 @csrf   
                 @method('DELETE')
 

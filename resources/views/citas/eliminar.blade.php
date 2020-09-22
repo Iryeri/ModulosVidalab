@@ -10,7 +10,7 @@
         </div>
 
         <div class="card-body">
-            <form action="/citas/{{$cita->id}}" method="POST">
+            <form action="/citas/{{$cita->idDeLaCita}}" method="POST">
                 @csrf   
                 @method('DELETE')
 
