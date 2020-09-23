@@ -24,9 +24,9 @@
                         @enderror
                     </div>
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" placeholder="Escriba el código de la empresa" name="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}"/> <br>
-                        @error('codigoDeLaEmpresa')
+                        <label for="exampleFormControlSelect1">Identificador</label>
+                        <input type="text" class="form-control" name="idDeLaEmpresa" readonly="idDeLaEmpresa" value="{{$empresa->idDeLaEmpresa}}"/> <br>
+                        @error('idDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>

@@ -23,8 +23,8 @@
                         <input type="text" class="form-control" name="nombreDeLaEmpresa" readonly="nombreDeLaEmpresa" value="{{$empresa->nombreDeLaEmpresa}}"/> <br> 
                     </div>
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" name="codigoDeLaEmpresa" readonly="codigoDeLaEmpresa" value="{{$empresa->codigoDeLaEmpresa}}"/> <br> 
+                        <label for="exampleFormControlSelect1">Identificador</label>
+                        <input type="text" class="form-control" name="idDeLaEmpresa" readonly="idDeLaEmpresa" value="{{$empresa->idDeLaEmpresa}}"/> <br> 
                     </div>
                 </div> 
                 <div class="row">

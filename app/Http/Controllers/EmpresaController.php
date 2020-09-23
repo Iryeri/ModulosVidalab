@@ -27,7 +27,6 @@ class EmpresaController extends Controller
     {
         $this->validate(request(), [
             'nombreDeLaEmpresa' => 'required',
-            'codigoDeLaEmpresa' => 'required',
             'numeroDeTelefonoDeLaEmpresa' => 'required',
             'correoElectronicoDeLaEmpresa' => 'required',
             'direccionDeLaEmpresa' => 'required'
@@ -35,7 +34,6 @@ class EmpresaController extends Controller
         Empresa::create(
         [
             'nombreDeLaEmpresa' => request('nombreDeLaEmpresa'),
-            'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
             'numeroDeTelefonoDeLaEmpresa' => request('numeroDeTelefonoDeLaEmpresa'),
             'correoElectronicoDeLaEmpresa' => request('correoElectronicoDeLaEmpresa'),
             'direccionDeLaEmpresa' => request('direccionDeLaEmpresa'),
@@ -66,7 +64,6 @@ class EmpresaController extends Controller
         $this->validate(request(),
         [
             'nombreDeLaEmpresa' => 'required',
-            'codigoDeLaEmpresa' => 'required',
             'numeroDeTelefonoDeLaEmpresa' => 'required',
             'correoElectronicoDeLaEmpresa' => 'required',
             'direccionDeLaEmpresa' => 'required'

@@ -23,16 +23,6 @@
                         @enderror
                     </div>
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Código de la empresa</label>
-                        <input type="text" class="form-control" placeholder="Escriba el código de la empresa" name="codigoDeLaEmpresa" value="{{old('codigoDeLaEmpresa')}}"/> <br> 
-                        @error('codigoDeLaEmpresa')
-                            <div class="alert alert-danger">{{$message}}</div>
-                        @enderror
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
                         <label for="exampleFormControlSelect1">Número telefónico</label>
                         <input type="text" class="form-control" placeholder="Escriba un número telefónico para contacto" name="numeroDeTelefonoDeLaEmpresa" value="{{old('numeroDeTelefonoDeLaEmpresa')}}"/> <br> 
                         @error('numeroDeTelefonoDeLaEmpresa')

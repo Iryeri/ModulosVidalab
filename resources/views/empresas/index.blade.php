@@ -12,7 +12,7 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col"><center>Código</center></th>
+                                        <th scope="col"><center>Identificador</center></th>
                                         <th scope="col"><center>Nombre de Empresa</center></th>
                                         <th scope="col"><center>Número telefónico de Empresa</center></th>
                                         <th scope="col"></th>
@@ -23,7 +23,7 @@
                                 <tbody>
                                     @foreach($empresas as $empresa)
                                     <tr>
-                                        <th scope="row"><center>{{$empresa->codigoDeLaEmpresa}}</center></th>
+                                        <th scope="row"><center>{{$empresa->idDeLaEmpresa}}</center></th>
                                         <td><center>{{ $empresa->nombreDeLaEmpresa}}</center></td>
                                         <td><center>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</center></td>
                                         <td></td>

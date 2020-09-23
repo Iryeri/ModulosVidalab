@@ -24,9 +24,10 @@ class CitaController extends Controller
 
     public function guardar(Empresa $empresa)
     {
+        $id = $empresa->idDeLaEmpresa;
+
         $this->validate(request(),
         [
-            'codigoDeLaEmpresa' => 'required',
             'idDeLaEmpresa' => 'required',
             'nombreDelSolicitante' => 'required',
             'primerApellidoDelSolicitante' => 'required',
@@ -38,8 +39,7 @@ class CitaController extends Controller
         ]);
         Cita::create(
         [
-            'codigoDeLaEmpresa' => request('codigoDeLaEmpresa'),
-            'idDeLaEmpresa' => $empresa->idDeLaEmpresa,
+            'idDeLaEmpresa' => request('idDeLaEmpresa'),
             'nombreDelSolicitante' => request('nombreDelSolicitante'),
             'primerApellidoDelSolicitante' => request('primerApellidoDelSolicitante'),
             'segundoApellidoDelSolicitante' => request('segundoApellidoDelSolicitante'),

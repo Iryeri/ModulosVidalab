@@ -16,7 +16,6 @@ class CreateCitasTable extends Migration
         Schema::create('citas', function (Blueprint $table) {
             $table->id('idDeLaCita');
             $table->unsignedBigInteger('idDeLaEmpresa');
-            $table->string('codigoDeLaEmpresa');
             $table->string('nombreDelSolicitante');
             $table->string('primerApellidoDelSolicitante');
             $table->string('segundoApellidoDelSolicitante');
