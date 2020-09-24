@@ -40,8 +40,8 @@
                     </div>
                 </div>
             </div>
-            <a href="/empresas/agregar" class="btn btn-dark">Registrar Empresa</a>    |   <a href="/home" class="btn btn-dark">Volever al menú</a>   
         </div>
+        <center><a href="/empresas/agregar" class="btn btn-dark">Registrar Empresa</a>    |   <a href="/home" class="btn btn-dark">Volever al menú</a></center>
     </div>
 </div>
 @endsection

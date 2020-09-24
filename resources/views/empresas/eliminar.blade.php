@@ -14,7 +14,8 @@
                 @method('DELETE')
 
                 <div class="alert alert-danger" role="alert">
-                    ¡Lea cuidadosamente la información! <b>¿Realmente desea eliminar este registro?.</b>
+                    ¡Lea cuidadosamente la información y recuerde que si tiene citas registradas no podrá eliminar este registro! 
+                    <b>¿Realmente desea eliminar este registro?.</b>
                 </div>
 
                 <div class="row">

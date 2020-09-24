@@ -12,6 +12,7 @@
                             <table class="table">
                             <thead class="thead-dark">
                                     <tr>
+                                        <th scope="col"><center>Identificador</center></th>
                                         <th scope="col"><center>Fecha de cita</center></th>
                                         <th scope="col"><center>Hora de cita</center></th>
                                         <th scope="col"><center>Clientes totales por atender</center></th>
@@ -25,6 +26,7 @@
                                 <tbody>
                                     @foreach($citas as $cita)
                                     <tr>
+                                        <th scope="row"><center>{{ $cita->idDeLaEmpresa}}</center></th>
                                         <th scope="row"><center>{{ $cita->fechaDeCita}}</center></th>
                                         <td><center>{{$cita->horaDeCita}}</center></td>
                                         <td><center>{{$cita->numeroDeClientesPorAtender}}</center></td>
