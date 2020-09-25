@@ -53,10 +53,6 @@
         </div> 
     </div>
     <div class="card-body">
-
-    aquí va la lista
-    
-
     </div>
 </div>                    
 @endsection

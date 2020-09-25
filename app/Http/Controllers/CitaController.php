@@ -16,6 +16,16 @@ class CitaController extends Controller
         return view('citas.index', compact('citas'));
     }
 
+//PRUEB MOSTRAR Y LISTAR
+    public function listarCitas(Empresa $empresa)
+    {
+        $citas = Cita::all();
+        mostrarEmpresa($empresa);
+        return view ('empresas.listarCitas', compact('citas'));
+    }
+
+
+
 //AGREGAR
     public function agregar(Empresa $empresa)
     {

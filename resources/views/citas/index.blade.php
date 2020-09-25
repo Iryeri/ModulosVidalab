@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-header"><h4><b>Registro de citas por empresa</b></h4></div>
                     <div class="card-body"> 
-                        <ul class="list-group">             
+                        <ul class="list-group">      
                             <table class="table">
                             <thead class="thead-dark">
                                     <tr>
@@ -22,23 +22,21 @@
                                         <th scope="col">Acción a realizar</th>
                                     </tr>
                                 </thead>
-
-                                <tbody>
+                               <tbody>
                                     @foreach($citas as $cita)
-                                    <tr>
-                                        <th scope="row"><center>{{ $cita->idDeLaEmpresa}}</center></th>
-                                        <th scope="row"><center>{{ $cita->fechaDeCita}}</center></th>
-                                        <td><center>{{$cita->horaDeCita}}</center></td>
-                                        <td><center>{{$cita->numeroDeClientesPorAtender}}</center></td>
-                                        <td><center>{{$cita->tiposDeAnalisisRequeridos}}</center></td>
-                                        <td><center>{{$cita->nombreDelSolicitante}} {{$cita->primerApellidoDelSolicitante}} {{$cita->segundoApellidoDelSolicitante}}</center></td>
-                                        <td></td>
-                                        <td> <a href="/citas/{{$cita->idDeLaCita}}/editar" class="btn btn-success">Editar</a> |  
-                                        <a href="/citas/{{$cita->idDeLaCita}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
-                                    </tr>
+                                        <tr>
+                                            <th scope="row"><center>{{ $cita->idDeLaEmpresa}}</center></th>
+                                            <th scope="row"><center>{{ $cita->fechaDeCita}}</center></th>
+                                            <td><center>{{$cita->horaDeCita}}</center></td>
+                                            <td><center>{{$cita->numeroDeClientesPorAtender}}</center></td>
+                                            <td><center>{{$cita->tiposDeAnalisisRequeridos}}</center></td>
+                                            <td><center>{{$cita->nombreDelSolicitante}} {{$cita->primerApellidoDelSolicitante}} {{$cita->segundoApellidoDelSolicitante}}</center></td>
+                                            <td></td>
+                                            <td> <a href="/citas/{{$cita->idDeLaCita}}/editar" class="btn btn-success">Editar</a> |  
+                                            <a href="/citas/{{$cita->idDeLaCita}}/eliminar" class="btn btn-danger">Eliminar</a> </center></td>
+                                        </tr>   
                                     @endforeach
                                 </tbody>
-
                             </table>
                         </ul>
                     </div>

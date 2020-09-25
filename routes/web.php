@@ -13,7 +13,7 @@ Route::get('empresas/agregar', 'EmpresaController@agregar');
 Route::post('/empresas', 'EmpresaController@guardar');
 
 Route::get('/empresas', 'EmpresaController@index');
-Route::get('/empresas/{empresa}', 'EmpresaController@mostrar', 'CitaController@index');
+Route::get('/empresas/{empresa}', 'EmpresaController@mostrar');
 
 Route::get('/empresas/{empresa}/editar', 'EmpresaController@editar');
 Route::put('/empresas/{empresa}', 'EmpresaController@actualizar');

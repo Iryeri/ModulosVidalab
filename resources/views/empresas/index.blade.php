@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-header"><h4><b>Registro de empresas</b></h4></div>
                     <div class="card-body"> 
-                        <ul class="list-group">             
+                        <ul class="list-group">
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
@@ -19,7 +19,6 @@
                                         <th scope="col">Acción a realizar</th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
                                     @foreach($empresas as $empresa)
                                     <tr>
@@ -34,14 +33,13 @@
                                     </tr>
                                     @endforeach
                                 </tbody>
-                            </table>
+                            </table>                         
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <center><a href="/empresas/agregar" class="btn btn-dark">Registrar Empresa</a>    |   <a href="/home" class="btn btn-dark">Volever al menú</a></center>
+        <center><a href="/empresas/agregar" class="btn btn-dark">Registrar Empresa</a>    |   <a href="/home" class="btn btn-dark">Volver al menú</a></center>
     </div>
 </div>
 @endsection
-
