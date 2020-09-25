@@ -19,9 +19,11 @@ class CitaController extends Controller
 //PRUEB MOSTRAR Y LISTAR
     public function listarCitas(Empresa $empresa)
     {
+        //if($empresa->idDeLaEmpresa === )
         $citas = Cita::all();
-        mostrarEmpresa($empresa);
-        return view ('empresas.listarCitas', compact('citas'));
+        $id = $empresa->idDeLaEmpresa;
+        //$datos = []
+        return view ('empresas.mostrar', compact('citas'));
     }
 
 

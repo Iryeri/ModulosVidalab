@@ -28,6 +28,7 @@ Route::post('/citas', 'CitaController@guardar');
 
 Route::get('/citas', 'CitaController@index');
 Route::get('/citas/{cita}', 'CitaController@mostrar');
+Route::get('/citas/{empresa}/lista_de_citas', 'CitaController@listarCitas');
 
 Route::get('/citas/{cita}/editar', 'CitaController@editar');
 Route::put('/citas/{cita}', 'CitaController@actualizar');

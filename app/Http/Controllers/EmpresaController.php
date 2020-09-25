@@ -48,7 +48,8 @@ class EmpresaController extends Controller
     public function mostrar(Empresa $empresa)
     {
         $empresas = Empresa::all();
-        return view('empresas.mostrar', compact('empresa'));
+        $citas = Cita::all();
+        return view('empresas.mostrar', compact('empresa', 'citas'));
     }
 
 
