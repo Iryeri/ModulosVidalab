@@ -15,8 +15,7 @@
                                         <th scope="col"><center>Identificador</center></th>
                                         <th scope="col"><center>Nombre de Empresa</center></th>
                                         <th scope="col"><center>Número telefónico de Empresa</center></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">Acción a realizar</th>
+                                        <th scope="col"><center>Acción a realizar<center></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -25,7 +24,6 @@
                                         <th scope="row"><center>{{$empresa->idDeLaEmpresa}}</center></th>
                                         <td><center>{{ $empresa->nombreDeLaEmpresa}}</center></td>
                                         <td><center>{{$empresa->numeroDeTelefonoDeLaEmpresa}}</center></td>
-                                        <td></td>
                                         <td> </center><a href="/empresas/{{$empresa->idDeLaEmpresa}}" class="btn btn-primary">Consultar datos</a> |  
                                         <a href="/empresas/{{$empresa->idDeLaEmpresa}}/editar" class="btn btn-success">Editar datos</a> |
                                         <a href="/citas/{{$empresa->idDeLaEmpresa}}/agregar" class="btn btn-info">Agregar cita</a> |  

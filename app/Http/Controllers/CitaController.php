@@ -16,17 +16,6 @@ class CitaController extends Controller
         return view('citas.index', compact('citas'));
     }
 
-//PRUEB MOSTRAR Y LISTAR
-    public function listarCitas(Empresa $empresa)
-    {
-        //if($empresa->idDeLaEmpresa === )
-        $citas = Cita::all();
-        $id = $empresa->idDeLaEmpresa;
-        //$datos = []
-        return view ('empresas.mostrar', compact('citas'));
-    }
-
-
 
 //AGREGAR
     public function agregar(Empresa $empresa)
@@ -94,7 +83,7 @@ class CitaController extends Controller
         ]);
         $cita->update(request()->all());
 
-        return view ('citas.mostrar', compact('cita'));
+        return redirect ('/empresas'.'/'. $cita->idDeLaEmpresa);
     }
 
 
@@ -109,7 +98,7 @@ class CitaController extends Controller
     {
         $cita->delete();
 
-        return redirect('/citas');
+        return redirect('/empresas'.'/'. $cita->idDeLaEmpresa);
     }
 
 }

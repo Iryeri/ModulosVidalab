@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Empresa;
+use App\Cita;
 use Illuminate\Http\Request;
 
 class EmpresaController extends Controller
@@ -71,7 +72,7 @@ class EmpresaController extends Controller
         ]);
         $empresa->update(request()->all());
 
-        return view('empresas.mostrar', compact('empresa'));
+        return redirect ('/empresas');
     }
 
     

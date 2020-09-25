@@ -6,15 +6,10 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Cita Actualizada</b></h3>
+            <h3><b>Consulta de registro de Cita</b></h3>
         </div>
 
         <div class="card-body">
-
-                <div class="alert alert-success" role="alert">
-                    ¡Los datos se an actualizado exitosamente!</b>
-                </div>
-
                 <div class="row">
                     <div class="col">
                         <label for="exampleFormControlSelect1">Nombre del solicitante</label>
@@ -48,10 +43,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <a href="/citas" class="btn btn-success">Volver a registro de citas</a>           
+                        <a href="javascript: history.go(-1)" class="btn btn-danger">Volver</a>           
                     </div>
                     <div class="col">
-                        <a href="/home" class="btn btn-primary">Volver al menú</a>
+                        <a href="/home" class="btn btn-danger">Volver al menú principal</a>
                     </div>
                 </div>
             </div>

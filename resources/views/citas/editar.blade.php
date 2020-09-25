@@ -25,7 +25,7 @@
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Primer apellido</label>
-                        <input type="text" class="form-control" placeholder="Escriba el primer apellido del solicitante de la cita" name="primerApellidoDelSolicitante" value="{{$cita->primerApellidoDelSolicitante}}"/> <br>
+                        <input type="text" class="form-control" placeholder="Escriba el primer apellido del solicitante" name="primerApellidoDelSolicitante" value="{{$cita->primerApellidoDelSolicitante}}"/> <br>
                         @error('primerApellidoDelSolicitante')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror                   
@@ -63,17 +63,17 @@
                     </div>
                 </div>
                 <label for="exampleFormControlSelect1">Escriba los tipos de análisis requeridos</label>
-                <textarea name="tiposDeAnalisisRequeridos" class="form-control" cols="30" rows="5" placeholder="Escriba la dirección exacta de la empresa">{{$cita->tiposDeAnalisisRequeridos}}</textarea> <br>
+                <textarea name="tiposDeAnalisisRequeridos" class="form-control" cols="30" rows="5" placeholder="Escriba los análisis requeridos">{{$cita->tiposDeAnalisisRequeridos}}</textarea> <br>
                 @error('tiposDeAnalisisRequeridos')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Acturalizar datos</button>   
+                        <button type="submit" class="btn btn-success">Actualizar datos</button>   
                     </div>
                     <div class="col">
-                        <a href="/citas" class="btn btn-primary">Cancelar</a>                
+                        <a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar</a>                
                     </div>
                 </div>
 

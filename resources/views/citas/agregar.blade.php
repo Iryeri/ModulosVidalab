@@ -41,7 +41,7 @@
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Primer apellido</label>
-                        <input type="text" class="form-control" placeholder="Escriba el primer apellido del solicite" name="primerApellidoDelSolicitante" value="{{old('primerApellidoDelSolicitante')}}"/> <br>
+                        <input type="text" class="form-control" placeholder="Escriba el primer apellido del solicitante" name="primerApellidoDelSolicitante" value="{{old('primerApellidoDelSolicitante')}}"/> <br>
                         @error('primerApellidoDelSolicitante')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror                   
@@ -79,17 +79,17 @@
                     </div>
                 </div>
                 <label for="exampleFormControlSelect1">Escriba los tipos de análisis requeridos</label>
-                <textarea name="tiposDeAnalisisRequeridos" class="form-control" cols="30" rows="5" placeholder="Escriba la dirección exacta de la empresa">{{old('tiposDeAnalisisRequeridos')}}</textarea> <br>
+                <textarea name="tiposDeAnalisisRequeridos" class="form-control" cols="30" rows="5" placeholder="Escriba los tipos de análisis requeridos">{{old('tiposDeAnalisisRequeridos')}}</textarea> <br>
                 @error('tiposDeAnalisisRequeridos')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-primary">Registrar cita</button>
+                        <button type="submit" class="btn btn-success">Registrar cita</button>
                     </div>
                     <div class="col">
-                        <a href="/citas" class="btn btn-primary">Cancelar y volver</a>
+                        <a href="/empresas" class="btn btn-danger">Cancelar y volver</a>
                     </div>
                 </div>
 

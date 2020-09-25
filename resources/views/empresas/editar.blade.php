@@ -35,14 +35,14 @@
                 <div class="row">
                     <div class="col">
                         <label for="exampleFormControlSelect1">Número telefónico</label>
-                        <input type="text" class="form-control" placeholder="Escriba un número telefónico para contacto" name="numeroDeTelefonoDeLaEmpresa" value="{{$empresa->numeroDeTelefonoDeLaEmpresa}}"/> <br>
+                        <input type="text" class="form-control" placeholder="Escriba un número telefónico para contactar" name="numeroDeTelefonoDeLaEmpresa" value="{{$empresa->numeroDeTelefonoDeLaEmpresa}}"/> <br>
                         @error('numeroDeTelefonoDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Correo electrónico</label>
-                        <input type="text" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{$empresa->correoElectronicoDeLaEmpresa}}"/> <br>
+                        <input type="text" class="form-control" placeholder="Escriba un correo electrónico para contactar" name="correoElectronicoDeLaEmpresa" value="{{$empresa->correoElectronicoDeLaEmpresa}}"/> <br>
                         @error('correoElectronicoDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
@@ -57,7 +57,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Acturalizar datos</button> 
+                        <button type="submit" class="btn btn-success">Actualizar datos</button> 
                     </div>
                     <div class="col">
                         <a href="/empresas" class="btn btn-primary">Cancelar</a>

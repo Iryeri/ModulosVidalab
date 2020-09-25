@@ -56,7 +56,7 @@
                         <button type="submit" class="btn btn-danger">Eliminar Registro</button>
                     </div>
                     <div class="col">
-                        <a href="/citas" class="btn btn-primary">Cancelar</a>
+                        <a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar</a>
                     </div>
                 </div>      
             </form>   

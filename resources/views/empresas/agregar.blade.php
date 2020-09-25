@@ -23,14 +23,14 @@
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Número telefónico</label>
-                        <input type="text" class="form-control" placeholder="Escriba un número telefónico para contacto" name="numeroDeTelefonoDeLaEmpresa" value="{{old('numeroDeTelefonoDeLaEmpresa')}}"/> <br> 
+                        <input type="text" class="form-control" placeholder="Escriba un número telefónico para contactar" name="numeroDeTelefonoDeLaEmpresa" value="{{old('numeroDeTelefonoDeLaEmpresa')}}"/> <br> 
                         @error('numeroDeTelefonoDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Correo electrónico</label>
-                        <input type="email" class="form-control" placeholder="Escriba un correo electrónico para contacto" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> 
+                        <input type="email" class="form-control" placeholder="Escriba un correo electrónico para contactar" name="correoElectronicoDeLaEmpresa" value="{{old('correoElectronicoDeLaEmpresa')}}"/> <br> 
                         @error('correoElectronicoDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
@@ -45,10 +45,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-primary">Registrar empresa</button>
+                        <button type="submit" class="btn btn-success">Registrar empresa</button>
                     </div>
                     <div class="col">
-                        <a href="/empresas" class="btn btn-primary">Cancelar y volver</a>
+                        <a href="/empresas" class="btn btn-danger">Cancelar y volver</a>
                     </div>
                 </div>
             </form>
