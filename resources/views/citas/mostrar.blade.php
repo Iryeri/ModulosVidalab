@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Consulta de registro de Cita</b></h3>
+            <h3><b><center>Consultar Cita registrada</center></b></h3>
         </div>
 
         <div class="card-body">
@@ -43,10 +43,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <a href="javascript: history.go(-1)" class="btn btn-danger">Volver</a>           
+                        <center><a href="javascript: history.go(-1)" class="btn btn-danger">Volver</a></center>           
                     </div>
                     <div class="col">
-                        <a href="/home" class="btn btn-danger">Volver al menú principal</a>
+                        <center><a href="/home" class="btn btn-danger">Ir al menú principal</a></center>
                     </div>
                 </div>
             </div>

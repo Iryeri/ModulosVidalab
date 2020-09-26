@@ -5,7 +5,7 @@
 <div class="container"> 
     <div class="card">
         <div class="card-header">
-            <h3><b>Consulta de registro de empresa</b></h3>  
+            <h3><b><center>Consultar Empresa registrada y sus Citas</center></b></h3>  
         </div>
     
         <div class="card-body">
@@ -43,19 +43,22 @@
 
             <div class="row">
                 <div class="col">
-                    <a href="/empresas" class="btn btn-danger">Regresar a la lista</a> 
+                    <center><a href="/empresas" class="btn btn-danger">Regresar a la lista</a></center> 
                 </div>
                 <div class="col">
-                    <a href="/home" class="btn btn-danger">Volver al menú</a> 
-                </div>           
+                    <center><a href="/home" class="btn btn-danger">Ir al menú principal</a></center> 
+                </div>          
             </div>
         </div> 
     </div>
 
 
     <div class="card">
-        <div class="card-header"><h4><b>Registro de citas por empresa</b></h4></div>
+        <div class="card-header"><h4><b><center>Registro de citas<center></b></h4></div>
             <div class="card-body"> 
+            <div class="alert alert-info" role="alert">
+                <center>¡Lista de citas ordenada de forma <i>descendente, según fecha de regristro</i> en el sistema!</center>
+            </div>
                 <ul class="list-group">      
                     <table class="table">
                     <thead class="thead-dark">
@@ -75,7 +78,7 @@
                                     <td><center>{{$cita->horaDeCita}}</center></td>
                                     <td><center>{{$cita->numeroDeClientesPorAtender}}</center></td>
                                     <td><center>{{$cita->tiposDeAnalisisRequeridos}}</center></td>
-                                    <td></center><a href="/citas/{{$cita->idDeLaCita}}" class="btn btn-primary">Consultar datos</a> |
+                                    <td><center><a href="/citas/{{$cita->idDeLaCita}}" class="btn btn-primary">Consultar datos</a> |
                                     <a href="/citas/{{$cita->idDeLaCita}}/editar" class="btn btn-success">Editar</a> |  
                                     <a href="/citas/{{$cita->idDeLaCita}}/eliminar" class="btn btn-danger">Eliminar</a></center></td>
                                 </tr>

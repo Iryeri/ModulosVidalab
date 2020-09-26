@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Eliminar Cita</b></h3>
+            <h3><b><center>Eliminar Cita registrada</center></b></h3>
         </div>
 
         <div class="card-body">
@@ -15,7 +15,7 @@
                 @method('DELETE')
 
                 <div class="alert alert-danger" role="alert">
-                    ¡Lea cuidadosamente la información! <b>¿Realmente desea eliminar este registro?.</b>
+                    <center>¡Lea cuidadosamente la información! <b>¿Realmente desea eliminar este registro?</b></center>
                 </div>
 
                 <div class="row">
@@ -53,10 +53,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-danger">Eliminar Registro</button>
+                        <center><button type="submit" class="btn btn-danger">Eliminar Registro</button></center>
                     </div>
                     <div class="col">
-                        <a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar</a>
+                        <center><a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar y Volver</a></center>
                     </div>
                 </div>      
             </form>   

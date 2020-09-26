@@ -5,14 +5,12 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-           <h3><b> Registrar Nueva Empresa </b></h3>
+           <h3><b><center>Registrar nueva Empresa</center></b></h3>
         </div>
 
         <div class="card-body">
-
             <form action="/empresas" method="POST">
                 @csrf
-
                 <div class="row">
                     <div class="col">
                         <label for="exampleFormControlSelect1">Nombre</label>
@@ -45,10 +43,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Registrar empresa</button>
+                        <center><button type="submit" class="btn btn-success">Registrar empresa</button></center>
                     </div>
                     <div class="col">
-                        <a href="/empresas" class="btn btn-danger">Cancelar y volver</a>
+                        <center><a href="/empresas" class="btn btn-danger">Cancelar y Volver</a></center>
                     </div>
                 </div>
             </form>

@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-           <h3><b> Editar datos de empresa registrada</h3></b>
+           <h3><b><center>Editar datos de Empresa registrada</center></h3></b>
         </div>
 
         <div class="card-body">
@@ -57,10 +57,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Actualizar datos</button> 
+                        <center><button type="submit" class="btn btn-success">Actualizar datos</button></center> 
                     </div>
                     <div class="col">
-                        <a href="/empresas" class="btn btn-primary">Cancelar</a>
+                        <center><a href="/empresas" class="btn btn-primary">Cancelar y Volver</a></center>
                     </div>
                 </div>
             </form>

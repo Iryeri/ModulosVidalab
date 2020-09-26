@@ -6,8 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header"><h4><b>Registro de Citas de todas las Empresas</b></h4></div>
+                <div class="card-header"><h4><b><center>Registro de Citas de todas las Empresas</center></b></h4></div>
                     <div class="card-body"> 
+                        <div class="alert alert-info" role="alert">
+                            <center>¡Lista de citas ordenada de forma <i>descendente, según fecha de regristro</i> en el sistema!</center>
+                        </div>
                         <ul class="list-group">      
                             <table class="table">
                             <thead class="thead-dark">
@@ -41,8 +44,9 @@
                     </div>
                 </div>
             </div>
-            <a href="/home" class="btn btn-danger">Volver al menú principal</a>
-        </div>
+        </div> 
+        <br>
+        <center><a href="/home" class="btn btn-danger">Ir al menú principal</a></center>
     </div>
 </div>
 @endsection

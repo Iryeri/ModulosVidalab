@@ -49,7 +49,7 @@ class EmpresaController extends Controller
     public function mostrar(Empresa $empresa)
     {
         $empresas = Empresa::all();
-        $citas = Cita::all();
+        $citas = Cita::orderBy('created_at', 'desc')->get();
         return view('empresas.mostrar', compact('empresa', 'citas'));
     }
 

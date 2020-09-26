@@ -12,7 +12,7 @@ class CitaController extends Controller
 //LISTAR REGISTROS
     public function index()
     {
-        $citas = Cita::all();
+        $citas = Cita::orderBy('created_at', 'desc')->get();
         return view('citas.index', compact('citas'));
     }
 

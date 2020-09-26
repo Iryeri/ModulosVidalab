@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Editar cita registrada</b></h3>
+            <h3><b><center>Editar datos de Cita registrada</center></b></h3>
         </div>
 
         <div class="card-body">
@@ -70,10 +70,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Actualizar datos</button>   
+                        <center><button type="submit" class="btn btn-success">Actualizar datos</button></center>   
                     </div>
                     <div class="col">
-                        <a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar</a>                
+                        <center><a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar y Volver</a></center>                
                     </div>
                 </div>
 

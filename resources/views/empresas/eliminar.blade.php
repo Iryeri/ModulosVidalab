@@ -6,7 +6,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Eliminar registro de empresa</b></h3>  
+            <h3><b><center>Eliminar Empresa registrada</center></b></h3>  
         </div>
         <div class="card-body">
             <form action="/empresas/{{$empresa->idDeLaEmpresa}}" method="POST">
@@ -14,8 +14,8 @@
                 @method('DELETE')
 
                 <div class="alert alert-danger" role="alert">
-                    ¡Lea cuidadosamente la información y recuerde que si tiene citas registradas no podrá eliminar este registro! 
-                    <b>¿Realmente desea eliminar este registro?.</b>
+                    <center>¡Lea cuidadosamente la información y recuerde que si tiene citas registradas no podrá eliminar este registro! 
+                    <b>¿Realmente desea eliminar este registro?.</b></center>
                 </div>
 
                 <div class="row">
@@ -51,10 +51,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-danger">Eliminar Registro</button>
+                        <center><button type="submit" class="btn btn-danger">Eliminar Registro</button></center>
                     </div>
                     <div class="col">
-                        <a href="/empresas" class="btn btn-primary">Cancelar</a>
+                        <center><a href="/empresas" class="btn btn-primary">Cancelar y Volver</a></center>
                     </div>
                 </div>
             

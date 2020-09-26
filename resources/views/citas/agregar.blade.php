@@ -6,17 +6,19 @@
 
     <div class="card">
         <div class="card-header">
-            <h3><b>Registrar cita</b></h3>
+            <h3><b><center>Registrar nueva cita a la empresa</center></b></h3>
         </div>
 
         <div class="card-body">
-
+            <div class="alert alert-info" role="alert">
+                <center>¡Para ver la nueva cita registrada acceda por medio del botón <i>Consultar</i> correspondiente a la empresa!</center>
+            </div>
             <form action="/citas" method="POST">
                 @csrf
                
                 <div class="row">
                     <div class="col">
-                        <label for="exampleFormControlSelect1">Nombre</label>
+                        <label for="exampleFormControlSelect1">Nombre de la empresa</label>
                         <input type="text" class="form-control" name="nombreDeLaEmpresa" readonly="nombreDeLaEmpresa" value="{{$empresa->nombreDeLaEmpresa}}" /> <br>
                         @error('nombreDeLaEmpresa')
                             <div class="alert alert-danger">{{$message}}</div>
@@ -86,10 +88,10 @@
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Registrar cita</button>
+                        <center><button type="submit" class="btn btn-success">Registrar cita</button></center>
                     </div>
                     <div class="col">
-                        <a href="/empresas" class="btn btn-danger">Cancelar y volver</a>
+                        <center><a href="/empresas" class="btn btn-danger">Cancelar y Volver</a></center>
                     </div>
                 </div>
 
