@@ -34,12 +34,12 @@
                         @enderror
                     </div>
                 </div>
-
                 <label for="exampleFormControlSelect1">Ubicación (dirección exacta)</label>
                 <textarea name="direccionDeLaEmpresa" class="form-control" cols="30" rows="5" placeholder="Escriba la dirección exacta de la empresa">{{old('direccionDeLaEmpresa')}}</textarea> <br> 
                 @error('direccionDeLaEmpresa')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
+
                 <div class="row">
                     <div class="col">
                         <center><button type="submit" class="btn btn-success">Registrar empresa</button></center>

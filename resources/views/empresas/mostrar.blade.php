@@ -43,6 +43,9 @@
 
             <div class="row">
                 <div class="col">
+                    <center><button class="btn btn-primary" type="button" title="Para ocultar la lista vuelva a presionar este botón" data-toggle="collapse" data-target="#listaCitas" aria-expanded="false" aria-controls="listaCitas">Despliegue la lista de citas</button></center>
+                </div>
+                <div class="col">
                     <center><a href="/empresas" class="btn btn-danger">Regresar a la lista</a></center> 
                 </div>
                 <div class="col">
@@ -53,6 +56,10 @@
     </div>
 
 
+    <p>
+ 
+</p>
+<div class="collapse" id="listaCitas">
     <div class="card">
         <div class="card-header"><h4><b><center>Registro de citas<center></b></h4></div>
             <div class="card-body"> 
@@ -90,5 +97,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>                    
 @endsection

@@ -53,7 +53,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <center><button type="submit" class="btn btn-danger">Eliminar Registro</button></center>
+                        <center><button type="submit" class="btn btn-danger" onclick="return Confirmar()">Eliminar Registro</button></center>
                     </div>
                     <div class="col">
                         <center><a href="javascript: history.go(-1)" class="btn btn-primary">Cancelar y Volver</a></center>
