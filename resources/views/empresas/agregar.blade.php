@@ -40,7 +40,6 @@
                 @error('direccionDeLaEmpresa')
                     <div class="alert alert-danger">{{$message}}</div>
                 @enderror
-
                 <div class="row">
                     <div class="col">
                         <center><button type="submit" class="btn btn-success">Registrar empresa</button></center>

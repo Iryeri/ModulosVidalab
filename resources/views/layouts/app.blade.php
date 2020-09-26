@@ -9,8 +9,7 @@
 
     <title>{{ config('app.name', 'Vidalab') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+   
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -75,5 +74,8 @@
             @yield('content')
         </main>
     </div>
+     <!-- Scripts -->
+     <script src="{{ mix('js/app.js') }}"></script>
+    @yield('scripts') 
 </body>
 </html>
