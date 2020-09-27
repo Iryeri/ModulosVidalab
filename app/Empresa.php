@@ -18,7 +18,7 @@ class Empresa extends Model
     }
 
 
-//ATRIBUSTOS DE INGRESO MANUAL
+//ATRIBUTOS DE INGRESO MANUAL
     protected $fillable =
     [
         'nombreDeLaEmpresa',

@@ -22,7 +22,7 @@
                                         <th scope="col"><center>Análisis solicitados</center></th>
                                         <th scope="col"><center>Solicitante</center></th>
                                         <th></th>
-                                        <th scope="col">Acción a realizar</th>
+                                        <th scope="col"><center>Acción a realizar</center></th>
                                     </tr>
                                 </thead>
                                <tbody>

@@ -8,8 +8,22 @@ Route::get('/', function () {
 });
 
 
+//RUTAS DE SUBMÓDULO PRUEBAS
+Route::get('/pruebas/agregar', 'PruebaController@agregar');
+Route::post('/pruebas', 'PruebaController@guardar');
+
+Route::get('/pruebas', 'PruebaController@index');
+Route::get('/pruebas/{prueba}', 'PruebaController@mostrar');
+
+Route::get('/pruebas/{prueba}/editar', 'PruebaController@editar');
+Route::put('/pruebas/{prueba}', 'PruebaController@actualizar');
+
+Route::get('/pruebas/{prueba}/eliminar', 'PruebaController@eliminar');
+Route::delete('/pruebas/{prueba}', 'PruebaController@destruir');
+
+
 //RUTAS DE SUBMODULO EMPRESAS
-Route::get('empresas/agregar', 'EmpresaController@agregar');
+Route::get('/empresas/agregar', 'EmpresaController@agregar');
 Route::post('/empresas', 'EmpresaController@guardar');
 
 Route::get('/empresas', 'EmpresaController@index');

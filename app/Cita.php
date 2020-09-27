@@ -18,7 +18,7 @@ class Cita extends Model
     }
 
 
-//ATRIBUSTOS DE INGRESO MANUAL
+//ATRIBUTOS DE INGRESO MANUAL
     protected $fillable=
     [
         'idDeLaEmpresa',
