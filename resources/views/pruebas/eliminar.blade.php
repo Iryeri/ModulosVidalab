@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col">
                     <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" name="codigoDeAnalisis" readonly="codigoDeAnalisis" value="{{$prueba->codigoDeAnalisis}}"/> <br> 
+                        <input type="text" class="form-control" name="codigoDelAnalisis" readonly="codigoDelAnalisis" value="{{$prueba->codigoDelAnalisis}}"/> <br> 
                     </div>
                     <div class="col">
                         <label for="exampleFormControlSelect1">Nombre</label>

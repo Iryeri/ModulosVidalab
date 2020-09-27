@@ -26,7 +26,7 @@ class PruebaController extends Controller
     {
         $this->validate(request(),
         [
-            'codigoDeAnalisis' => 'required',
+            'codigoDelAnalisis' => 'required',
             'nombreDelAnalisis' => 'required',
             'descripcionDelAnalisis' => 'required',
             'costoDelAnalisis' => 'required',
@@ -35,7 +35,7 @@ class PruebaController extends Controller
         ]);
         Prueba::create(
         [
-            'codigoDeAnalisis' => request('codigoDeAnalisis'),
+            'codigoDelAnalisis' => request('codigoDelAnalisis'),
             'nombreDelAnalisis' => request('nombreDelAnalisis'),
             'descripcionDelAnalisis' => request('descripcionDelAnalisis'),
             'costoDelAnalisis' => request('costoDelAnalisis'),
@@ -66,7 +66,7 @@ class PruebaController extends Controller
     {
         $this->validate(request(),
         [
-            'codigoDeAnalisis' => 'required',
+            'codigoDelAnalisis' => 'required',
             'nombreDelAnalisis' => 'required',
             'descripcionDelAnalisis' => 'required',
             'costoDelAnalisis' => 'required',

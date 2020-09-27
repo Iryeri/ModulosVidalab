@@ -14,8 +14,8 @@
                 <div class="row">
                     <div class="col">
                         <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" placeholder="Escriba el código del análisis" name="codigoDeAnalisis" value="{{old('codigoDeAnalisis')}}" /> <br> 
-                        @error('codigoDeAnalisis')
+                        <input type="text" class="form-control" placeholder="Escriba el código del análisis" name="codigoDelAnalisis" value="{{old('codigoDelAnalisis')}}" /> <br> 
+                        @error('codigoDelAnalisis')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>
@@ -54,7 +54,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <center><button type="submit" class="btn btn-success">Registrar empresa</button></center>
+                        <center><button type="submit" class="btn btn-success">Registrar análisis</button></center>
                     </div>
                     <div class="col">
                         <center><a href="/pruebas" class="btn btn-danger">Cancelar y Volver</a></center>

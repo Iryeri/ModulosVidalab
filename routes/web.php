@@ -7,6 +7,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//RUTAS DE SUBMÓDULO PAQUETES
+Route::get('/paquetes/agregar', 'PaqueteController@agregar');
+Route::post('/paquetes', 'PaqueteController@guardar');
+
+Route::get('/paquetes', 'PaqueteController@index');
+Route::get('/paquetes/{paquete}', 'PaqueteController@mostrar');
+
+Route::get('/paquetes/{paquete}/editar', 'PaqueteController@editar');
+Route::put('/paquetes/{paquete}', 'PaqueteController@actualizar');
+
+Route::get('/paquetes/{paquete}/eliminar', 'PaqueteController@eliminar');
+Route::delete('/paquetes/{paquete}', 'PaqueteController@destruir');
+
 
 //RUTAS DE SUBMÓDULO PRUEBAS
 Route::get('/pruebas/agregar', 'PruebaController@agregar');

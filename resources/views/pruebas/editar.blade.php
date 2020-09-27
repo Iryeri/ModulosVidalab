@@ -18,8 +18,8 @@
                 <div class="row">
                     <div class="col">
                         <label for="exampleFormControlSelect1">Código</label>
-                        <input type="text" class="form-control" placeholder="Escriba el código del análisis" name="codigoDeAnalisis" value="{{$prueba->codigoDeAnalisis}}" /> <br>
-                        @error('codigoDeAnalisis')
+                        <input type="text" class="form-control" placeholder="Escriba el código del análisis" name="codigoDelAnalisis" value="{{$prueba->codigoDelAnalisis}}" /> <br>
+                        @error('codigoDelAnalisis')
                             <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>
