@@ -24,6 +24,7 @@
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="/pruebas">Registro de análisis</a>
       <a class="dropdown-item" href="/paquetes">Registro de paquetes de análisis</a>
+      <a class="dropdown-item" href="/catalogos">Catálogo</a>
     </div>
   </div>
 </div>

@@ -85,7 +85,7 @@ class PaqueteController extends Controller
     {
         $paquete->delete();
 
-        return redirect('/paquetes'.'/'. $paquete->idDelPaquete);
+        return redirect('/paquetes');
     }
 
 }

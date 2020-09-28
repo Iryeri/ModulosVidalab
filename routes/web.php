@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//RUTAS DEL CATALOGO
+Route::get('/catalogos', 'CatalogoController@index');
+
+
 //RUTAS DE SUBMÓDULO PAQUETES
 Route::get('/paquetes/agregar', 'PaqueteController@agregar');
 Route::post('/paquetes', 'PaqueteController@guardar');
