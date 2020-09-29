@@ -2,7 +2,6 @@
 @extends('pop_up.modal')
 @section('content')
     
-<link rel="stylesheet" type="text/css" href="css/estiloDelCatalogo.css">
 
 
 	<div class="container">
@@ -10,6 +9,9 @@
         <div class="card-header">
            <h3><b><center>Catálogo de Análisis</center></b></h3>
         </div>
+        <link rel="stylesheet" type="text/css" href="css/estiloDelCatalogo.css">
+
+
 
         @foreach($pruebas as $prueba)
             <div class="card">
