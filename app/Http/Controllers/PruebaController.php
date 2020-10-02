@@ -30,9 +30,9 @@ class PruebaController extends Controller
             'nombreDelAnalisis' => 'required',
             'descripcionDelAnalisis' => 'required',
             'costoDelAnalisis' => 'required',
-            'numeroDeMaquina' => 'required',
-            
+            'numeroDeMaquina' => 'required',            
         ]);
+
         Prueba::create(
         [
             'codigoDelAnalisis' => request('codigoDelAnalisis'),
@@ -40,7 +40,6 @@ class PruebaController extends Controller
             'descripcionDelAnalisis' => request('descripcionDelAnalisis'),
             'costoDelAnalisis' => request('costoDelAnalisis'),
             'numeroDeMaquina' => request('numeroDeMaquina'),
-           
         ]
         );
 

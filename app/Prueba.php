@@ -17,10 +17,10 @@ class Prueba extends Model
   //ATRIBUTOS DE INGRESO MANUAL
       protected $fillable =
       [
-          'codigoDelAnalisis',
-          'nombreDelAnalisis',
-          'descripcionDelAnalisis',
-          'costoDelAnalisis',
-          'numeroDeMaquina'
+        'codigoDelAnalisis',
+        'nombreDelAnalisis',
+        'descripcionDelAnalisis',
+        'costoDelAnalisis',
+        'numeroDeMaquina',
       ];
   }

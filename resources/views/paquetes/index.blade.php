@@ -37,7 +37,7 @@
             </div>
         </div> 
         <br>
-        <center><a href="/paquetes/agregar" class="btn btn-dark">Registrar Paquete</a>    |   <a href="/pruebas/" class="btn btn-dark">Desplegar lista de análisis</a>    |    <a href="/home" class="btn btn-dark">Ir al menú principal</a></center>
+        <center><a href="/paquetes/agregar" class="btn btn-dark">Registrar Paquete</a>    |   <a href="/pruebas" class="btn btn-dark">Desplegar lista de análisis</a>    |    <a href="/catalogos" class="btn btn-dark">Ir al catálogo</a>    |    <a href="/home" class="btn btn-dark">Ir al menú principal</a></center>
     </div>
 </div>
 @endsection

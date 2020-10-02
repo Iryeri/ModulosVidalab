@@ -15,7 +15,7 @@
 
         @foreach($pruebas as $prueba)
             <div class="card">
-                <img src="imagenes/microbiologia.jpg">
+                <img src="imagenes/naturaleza.jpg">
                 <br>
                 <h5><b>{{$prueba->nombreDelAnalisis}}</b></h5>
                 <p>Costo: ₡ {{$prueba->costoDelAnalisis}}</p>
@@ -30,7 +30,7 @@
         </div>
             @foreach($paquetes as $paquete)
                 <div class="card">
-                    <img src="imagenes/microbiologia2.jpg">
+                    <img src="imagenes/musica.jpg">
                     <br>
                     <h5><b>{{$paquete->nombreDelPaquete}}</b></h5>
                     <p>Costo: ₡ {{$paquete->costoDelPaquete}}</p>

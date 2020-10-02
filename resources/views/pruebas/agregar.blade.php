@@ -9,7 +9,7 @@
         </div>
 
         <div class="card-body">
-            <form action="/pruebas" method="POST">
+            <form action="/pruebas" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col">
