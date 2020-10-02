@@ -45,7 +45,6 @@
                     </div>
                 </div>
 
-
                 <label for="exampleFormControlSelect1">Descripción</label>
                 <textarea name="descripcionDelAnalisis" class="form-control" cols="30" rows="5" placeholder="Escriba la descripción del análisis">{{old('descripcionDelAnalisis')}}</textarea> <br> 
                 @error('descripcionDelAnalisis')
