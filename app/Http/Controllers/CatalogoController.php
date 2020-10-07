@@ -16,5 +16,4 @@ class CatalogoController extends Controller
         $paquetes = Paquete::all();
         return view('catalogo.index', compact('pruebas', 'paquetes'));
     }
-
 }
